@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="PinSystem:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PinSystem_jar</output-path>
+    <root id="archive" name="PinSystem.jar">
+      <element id="module-output" name="PinSystem" />
+    </root>
+  </artifact>
+</component>

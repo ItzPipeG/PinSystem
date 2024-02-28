@@ -1,0 +1,47 @@
+
+TITLE:
+  LOGGED:
+    TITLE: '&r'
+    SUBTITLE: '&aPin correcto!'
+
+  USE-PIN:
+    TITLE: '&e&lPin'
+    SUBTITLE: '&7Utiliza /pin <pin>'
+
+  PIN-CREATE:
+    TITLE: '&e&lPin'
+    SUBTITLE: '&7Utiliza /pin create <pin>'
+
+LOGGED:
+  TITLE: '&r'
+  SUBTITLE: '&aPin correcto!'
+
+PIN:
+  USE: '&aUtiliza /pin <pin>'
+  CREATE-USE: '&aUtiliza /pin create <pin>'
+  LOGGED-IN: '&aPin correcto!'
+  CREATED: '&aCreado correctamente tu pin.'
+  TOO-LONG: '&cEl pin debe tener exactamente 4 dígitos.'
+  CONTAINS-LETTERS: '&cNo puedes introducir un pin que contenga letras.'
+  ALREADY-LOGGED: '&cYa te encuentras logueado.'
+  ALREADY-CREATED: '&cYa tienes un pin creado'
+  CONSOLE-CHANGED:
+    - '&r'
+    - ' &aCambiado correctamente el pin de &f{player} &aa &f{pin}&a.'
+    - '&r'
+  CONSOLE-DELETED:
+    - '&r'
+    - ' &aEliminado correctamente el pin de &f{player}&a.'
+    - '&r'
+
+CACHE-DELETED: '&aEliminado el cache de todos los jugadores.'
+
+DISCONNECT:
+  ERROR: '&cHas sido desconectado.'
+  PIN-NOT-VALID: '&cEse pin no es válido!'
+  PIN-CREATED: '&aPin creado correctamente, reloguea!'
+  PIN-CHANGED: '&cTu pin ha sido cambiado!'
+
+RELOAD:
+  SUCCESSFULLY: '&aRecargado correctamente el complemento.'
+  ERROR: '&cError al intentar recargar la configuración.'
