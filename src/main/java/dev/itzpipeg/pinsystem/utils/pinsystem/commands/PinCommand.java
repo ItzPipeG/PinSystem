@@ -50,7 +50,7 @@ public class PinCommand extends Command {
 
                                         pinManager.setPlayerLogged(player);
 
-                                        if(plugin.pinManager.playerKickTask.get(player) != null){
+                                        if(plugin.pinManager.playerKickTask != null){
                                             plugin.pinManager.playerKickTask.get(player).cancel();
                                         }
 

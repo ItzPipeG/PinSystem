@@ -21,6 +21,7 @@ public class PlayerKick {
     }
 
     public ScheduledTask startTimer() {
+
         ProxyServer proxy = plugin.getProxy();
 
         task = proxy.getScheduler().schedule(plugin, new Runnable() {

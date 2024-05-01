@@ -86,7 +86,7 @@ public class PinManager {
 
     public void sendPlayerToAuth(ProxiedPlayer player){
         if(plugin.getConfig().getStringList("AUTH-SERVER.SERVER") != null){
-            for (String serverName : plugin.getConfig().getStringList("AUTH-SERVER")) {
+            for (String serverName : plugin.getConfig().getStringList("AUTH-SERVER.SERVER")) {
                 if (plugin.getProxy().getServerInfo(serverName) != null) {
                     player.connect(plugin.getProxy().getServerInfo(serverName));
                     break;
@@ -105,9 +105,12 @@ public class PinManager {
     }
     public void sendPlayerToLobby(ProxiedPlayer player){
         if(plugin.getConfig().getStringList("LOBBY-SERVER.SERVER") != null){
-            for (String serverName : plugin.getConfig().getStringList("LOBBY-SERVER")) {
+            for (String serverName : plugin.getConfig().getStringList("LOBBY-SERVER.SERVER")) {
                 if (plugin.getProxy().getServerInfo(serverName) != null) {
                     player.connect(plugin.getProxy().getServerInfo(serverName));
+
+                    plugin.getLogger().info(CC.translate("&aSended player &f"+player.getName() + " &ato &f" + serverName));
+
                     break;
                 }else{
                     player.disconnect(CC.translate(plugin.getLanguageFile().getString("DISCONNECT.ERROR")));
